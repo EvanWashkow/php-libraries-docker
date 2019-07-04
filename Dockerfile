@@ -19,8 +19,7 @@ RUN yes | apt install git
 
 
 #
-# INSTALL PHP LIBRARIES SO
-#URCE CODE
+# INSTALL PHP LIBRARIES SOURCE CODE
 #
 
 # Copy contents of hosts' www folder to container's web root

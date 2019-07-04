@@ -1,5 +1,5 @@
 # Fetch latest PHP image
-FROM php:apache
+FROM php:7.1-apache
 
 # Expose HTTP
 EXPOSE 80

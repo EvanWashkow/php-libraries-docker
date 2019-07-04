@@ -12,7 +12,4 @@ docker rm php-unit
 source $PWD/build.sh
 
 # Start a new container named "php-unit", mounting host's www at web root
-if [ ! -d "$DIRECTORY" ]; then
-    mkdir www
-fi
 docker run --name php-unit --mount type=bind,source=$PWD/www,target=/var/www/html -d -p 80:80 php-unit:latest

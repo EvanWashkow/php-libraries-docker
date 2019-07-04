@@ -12,4 +12,4 @@ docker rm php-unit
 source $PWD/build.sh
 
 # Start a new container named "php-unit"
-docker run --name php-unit -d -p 80:80 php-unit
+docker run --name php-unit -d -p 80:80 php-unit:latest

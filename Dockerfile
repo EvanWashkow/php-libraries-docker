@@ -35,3 +35,6 @@ ADD www/index.php /var/www/html
 # Clone PHP Libraries into container's web root
 RUN git clone https://github.com/EvanWashkow/php-libraries
 RUN cd /var/www/html/php-libraries && git checkout master
+
+# Install composer dependencies
+RUN cd /var/www/html/php-libraries && composer install

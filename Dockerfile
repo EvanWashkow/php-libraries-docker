@@ -11,9 +11,12 @@ EXPOSE 80
 # Set working directory to web root (affects interactive shell)
 WORKDIR /var/www/html
 
+# Set ServerName
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Install additional software
 RUN apt update
-RUN yes | apt install git
+RUN apt install git -y
 
 
 
@@ -27,4 +30,4 @@ ADD www/index.php /var/www/html
 
 # Clone PHP Libraries into container's web root
 RUN git clone https://github.com/EvanWashkow/php-libraries
-RUN git checkout master
+RUN cd /var/www/html/php-libraries && git checkout master

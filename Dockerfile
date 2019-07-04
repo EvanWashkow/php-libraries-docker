@@ -3,7 +3,11 @@
 #
 
 # Fetch latest PHP image
+FROM composer:latest AS composer
 FROM php:7.1-apache
+
+# Copy composer binary to this image
+COPY --from=composer /usr/bin/composer /usr/bin
 
 # Expose HTTP
 EXPOSE 80

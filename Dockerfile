@@ -18,10 +18,6 @@ WORKDIR /var/www/html
 # Set ServerName
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
-# Install additional software
-RUN apt update
-RUN apt install git -y
-
 
 
 
@@ -29,12 +25,10 @@ RUN apt install git -y
 # INSTALL PHP LIBRARIES SOURCE CODE
 #
 
-# Copy contents of hosts' www folder to container's web root
-ADD www/index.php /var/www/html
+# Install dependencies
+RUN apt update
+RUN apt install git zip -y
 
-# Clone PHP Libraries into container's web root
-RUN git clone https://github.com/EvanWashkow/php-libraries
-RUN cd /var/www/html/php-libraries && git checkout master
-
-# Install composer dependencies
-RUN cd /var/www/html/php-libraries && composer install
+# Copy Git submodule and composer install
+ADD php-libraries/ /var/www/html/
+RUN composer install

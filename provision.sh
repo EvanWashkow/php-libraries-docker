@@ -8,6 +8,9 @@
 docker-compose stop php-libraries
 yes | docker-compose rm php-libraries
 
+# Build the image
+source $PWD/build.sh
+
 # Start a new container named "php-libraries", mounting host's www at web root
 docker-compose up -d
 docker exec php-libraries composer install

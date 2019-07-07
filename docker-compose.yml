@@ -1,7 +1,7 @@
 version: "3"
 services:
   php-libraries:
-    build: .
+    image: php-libraries:latest
     deploy:
       replicas: 1
     container_name: php-libraries

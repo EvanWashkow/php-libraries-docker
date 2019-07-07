@@ -5,7 +5,7 @@
 #
 
 # Stop and destroy previous container
-docker-compose stop php-libraries
+source $PWD/stop.sh
 yes | docker-compose rm php-libraries
 
 # Build the image

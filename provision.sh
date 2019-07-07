@@ -5,12 +5,9 @@
 #
 
 # Stop and destroy previous container
-docker stop php-libraries
-docker rm php-libraries
-
-# (Re)build latest image
-source $PWD/build.sh
+docker-compose stop php-libraries
+yes | docker-compose rm php-libraries
 
 # Start a new container named "php-libraries", mounting host's www at web root
-docker run --name php-libraries --mount type=bind,source=$PWD/php-libraries,target=/var/www/html -d -p 8080:80 php-libraries:latest
+docker-compose up -d
 docker exec php-libraries composer install

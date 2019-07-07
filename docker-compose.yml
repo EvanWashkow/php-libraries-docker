@@ -1,0 +1,11 @@
+version: "3"
+services:
+  php-libraries:
+    build: .
+    deploy:
+      replicas: 1
+    container_name: php-libraries
+    ports:
+      - "8080:80"
+    volumes:
+      - ./php-libraries/:/var/www/html/

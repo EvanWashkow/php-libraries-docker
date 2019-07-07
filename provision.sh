@@ -12,5 +12,5 @@ docker rm php-libraries
 source $PWD/build.sh
 
 # Start a new container named "php-libraries", mounting host's www at web root
-docker run --name php-libraries --mount type=bind,source=$PWD/php-libraries,target=/var/www/html -d -p 80:80 php-libraries:latest
+docker run --name php-libraries --mount type=bind,source=$PWD/php-libraries,target=/var/www/html -d -p 8080:80 php-libraries:latest
 docker exec php-libraries composer install

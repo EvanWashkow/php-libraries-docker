@@ -35,6 +35,12 @@ RUN apt install git -y
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/
 
-# Clear out composer directories and composer install
+# Clean install
+RUN rm -rdf /var/www/html/debug.log
 RUN rm -rdf /var/www/html/vendor
+
+# Composer install
 RUN composer install
+
+# Set file permissions
+RUN chown -R www-data:www-data /var/www/html/

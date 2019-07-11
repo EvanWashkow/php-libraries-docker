@@ -8,6 +8,9 @@
 source $PWD/stop.sh
 yes | docker-compose rm
 
-# Start a new container named "php-libraries", mounting host's www at web root
+# Start a new container named "php-libraries"
 source $PWD/start.sh
+
+# Install composer dependencies and chmod them so the host can edit them
 docker-compose exec php-libraries composer install
+docker-compose exec php-libraries chmod 777 /var/www/html/vendor

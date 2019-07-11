@@ -4,4 +4,4 @@
 # BUILD LATEST DOCKER IMAGE
 #
 
-docker build --no-cache --tag php-libraries:latest .
+docker build --tag php-libraries:latest .

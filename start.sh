@@ -4,4 +4,4 @@
 # START CONTAINER
 #
 
-docker-compose start php-libraries
+docker-compose up -d

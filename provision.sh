@@ -6,11 +6,8 @@
 
 # Stop and destroy previous container
 source $PWD/stop.sh
-yes | docker-compose rm php-libraries
-
-# Build the image
-source $PWD/build.sh
+yes | docker-compose rm
 
 # Start a new container named "php-libraries", mounting host's www at web root
-docker-compose up -d
-docker exec php-libraries composer install
+source $PWD/start.sh
+docker-compose exec php-libraries composer install

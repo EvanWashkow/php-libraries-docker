@@ -4,4 +4,4 @@
 # STOP RUNNING CONTAINER
 #
 
-docker-compose stop php-libraries
+docker-compose stop

@@ -1,10 +1,8 @@
 version: "3"
 services:
   php-libraries:
-    image: php-libraries:latest
-    deploy:
-      replicas: 1
     container_name: php-libraries
+    image: php-libraries:latest
     ports:
       - "8080:80"
     volumes:

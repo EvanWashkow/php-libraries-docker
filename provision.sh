@@ -13,4 +13,4 @@ source $PWD/start.sh
 
 # Install composer dependencies and chmod them so the host can edit them
 docker-compose exec php-libraries composer install
-docker-compose exec php-libraries chmod 777 /var/www/html/vendor
+docker-compose exec php-libraries chmod -R 777 /var/www/html/vendor

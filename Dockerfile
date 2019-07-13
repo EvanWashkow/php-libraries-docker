@@ -21,10 +21,10 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 #
 
 # Install dependencies from repository
-RUN apt update \
- && apt install git -y \
- && apt autoremove -y \
- && apt clean
+RUN apt-get update \
+ && apt-get install git -y \
+ && apt-get autoremove -y \
+ && apt-get clean
 
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/

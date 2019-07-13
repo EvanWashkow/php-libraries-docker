@@ -1,0 +1,11 @@
+version: "3"
+services:
+  php-libraries:
+    container_name: php-libraries
+    environment:
+      - error_log=/var/www/html/debug.log
+    image: php-libraries:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ../php-libraries/:/var/www/html/

@@ -29,15 +29,15 @@ RUN mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
 #
 
 # Install dependencies
-RUN apt update
-RUN apt install git -y
+RUN apt update \
+ && apt install git -y
 
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/
 
-# Clean install
-RUN rm -rdf /var/www/html/debug.log
-RUN rm -rdf /var/www/html/vendor
+# Cleanup install
+RUN rm -rdf /var/www/html/debug.log \
+ && rm -rdf /var/www/html/vendor
 
 # Composer install
 RUN composer install

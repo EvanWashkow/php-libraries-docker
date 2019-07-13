@@ -9,9 +9,13 @@ FROM php:7.1-apache
 # Copy composer binary to this image
 COPY --from=composer /usr/bin/composer /usr/bin
 
-# Set up PHP
+# Set up base PHP
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
  && mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
+
+# Install PHP PECL extensions
+RUN pecl install xdebug \
+ && docker-php-ext-enable xdebug
 
 
 

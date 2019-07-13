@@ -9,17 +9,9 @@ FROM php:7.1-apache
 # Copy composer binary to this image
 COPY --from=composer /usr/bin/composer /usr/bin
 
-# Expose HTTP
-EXPOSE 80
-
-# Set working directory to web root (affects interactive shell)
-WORKDIR /var/www/html
-
-# Set ServerName
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-
-# Set up php.ini
-RUN mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
+# Set up PHP
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
+ && mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
 
 
 
@@ -28,16 +20,17 @@ RUN mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
 # INSTALL PHP LIBRARIES SOURCE CODE
 #
 
-# Install dependencies
+# Install dependencies from repository
 RUN apt update \
- && apt install git -y
+ && apt install git -y \
+ && apt autoremove -y \
+ && apt clean
 
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/
 
 # Cleanup install
-RUN rm -rdf /var/www/html/debug.log \
- && rm -rdf /var/www/html/vendor
+RUN rm -rdf /var/www/html/debug.log
 
 # Composer install
 RUN composer install

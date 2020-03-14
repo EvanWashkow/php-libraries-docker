@@ -24,12 +24,6 @@ RUN pecl install xdebug \
 # INSTALL PHP LIBRARIES SOURCE CODE
 #
 
-# Install dependencies from repository
-RUN apt-get update \
- && apt-get install git -y \
- && apt-get autoremove -y \
- && apt-get clean
-
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/
 

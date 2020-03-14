@@ -13,10 +13,6 @@ COPY --from=composer /usr/bin/composer /usr/bin
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
  && mv $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
 
-# Install PHP PECL extensions
-RUN pecl install xdebug \
- && docker-php-ext-enable xdebug
-
 
 
 

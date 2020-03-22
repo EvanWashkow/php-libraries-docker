@@ -20,6 +20,12 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 # INSTALL PHP LIBRARIES SOURCE CODE
 #
 
+# Install dependencies from repository
+RUN apt-get update \
+ && apt-get install git -y \
+ && apt-get autoremove -y \
+ && apt-get clean
+
 # Copy Git submodule into image
 ADD php-libraries/ /var/www/html/
 

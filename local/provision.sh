@@ -17,7 +17,7 @@ docker-compose exec php-libraries /bin/sh -c "cat /tmp/php.ini >> /usr/local/etc
 docker-compose exec php-libraries /etc/init.d/apache2 reload
 
 # Install composer dependencies
-docker-compose exec php-libraries composer Install
+docker-compose exec php-libraries composer install
 
 # Set file permissions
 source $PWD/fix-permissions.sh

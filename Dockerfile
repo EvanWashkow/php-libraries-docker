@@ -22,7 +22,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 
 # Install dependencies from repository
 RUN apt-get update \
- && apt-get install git -y \
+ && apt-get install git unzip zip -y \
  && apt-get autoremove -y \
  && apt-get clean
 

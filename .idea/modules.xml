@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/php-libraries/.idea/php-libraries.iml" filepath="$PROJECT_DIR$/php-libraries/.idea/php-libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/php-libraries-docker.iml" filepath="$PROJECT_DIR$/.idea/php-libraries-docker.iml" />
     </modules>
   </component>

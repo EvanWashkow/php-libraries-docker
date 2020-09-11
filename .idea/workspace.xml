@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="4dc0bcae-dd3d-4fca-a003-25aaba055e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings" doNotAsk="true">
-    <pharConfigPath>$PROJECT_DIR$/php-libraries/composer.json</pharConfigPath>
-    <execution />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/php-libraries" />
-  </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="2f07ee94-bfd9-40b1-a4c2-d50788563a6a" name="localhost" port="8080" use_path_mappings="true">
@@ -26,128 +9,9 @@
       </server>
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
-    <include_path>
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/composer" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/php-libraries/vendor/phpunit/php-timer" />
-    </include_path>
-  </component>
-  <component name="ProjectId" id="1hLaDbTkQ4V4JA4sbCf0n6DV76X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
   <component name="RunManager">
     <configuration name="php-libraries" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="NOT_FILTER">
       <method v="2" />
     </configuration>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4dc0bcae-dd3d-4fca-a003-25aaba055e0d" name="Default Changelist" comment="" />
-      <created>1599792709519</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1599792709519</updated>
-      <workItem from="1599792711170" duration="69000" />
-      <workItem from="1599793303888" duration="383000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="418" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599793599516">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="418" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1920.1048@0.32.1920.1048" timestamp="1599793599516" />
-    <state width="1874" height="223" key="GridCell.Tab.0.bottom" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.0.bottom/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.0.center" timestamp="1599793686718">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.0.center/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686718" />
-    <state width="1874" height="223" key="GridCell.Tab.0.left" timestamp="1599793686718">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.0.left/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686718" />
-    <state width="1874" height="223" key="GridCell.Tab.0.right" timestamp="1599793686718">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.0.right/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686718" />
-    <state width="1874" height="223" key="GridCell.Tab.1.bottom" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.1.bottom/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.1.center" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.1.center/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.1.left" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.1.left/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.1.right" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.1.right/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.2.bottom" timestamp="1599793686720">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.2.bottom/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686720" />
-    <state width="1874" height="223" key="GridCell.Tab.2.center" timestamp="1599793686720">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.2.center/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686720" />
-    <state width="1874" height="223" key="GridCell.Tab.2.left" timestamp="1599793686719">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.2.left/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686719" />
-    <state width="1874" height="223" key="GridCell.Tab.2.right" timestamp="1599793686720">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="223" key="GridCell.Tab.2.right/0.32.1920.1048@0.32.1920.1048" timestamp="1599793686720" />
-    <state x="449" y="191" width="1022" height="736" key="SettingsEditor" timestamp="1599793565942">
-      <screen x="0" y="32" width="1920" height="1048" />
-    </state>
-    <state x="449" y="191" width="1022" height="736" key="SettingsEditor/0.32.1920.1048@0.32.1920.1048" timestamp="1599793565942" />
   </component>
 </project>

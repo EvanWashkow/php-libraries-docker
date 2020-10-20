@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # DESTROY ANY PREVIOUS CONTAINER AND CREATE A NEW ONE

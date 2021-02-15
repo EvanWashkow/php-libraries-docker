@@ -2,8 +2,8 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/php-libraries/tests" isTestSource="false" packagePrefix="PHP\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/php-libraries/src" isTestSource="false" packagePrefix="PHP\" />
+      <sourceFolder url="file://$MODULE_DIR$/php-libraries/tests-php" isTestSource="false" packagePrefix="PHP\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/php-libraries/src-php" isTestSource="false" packagePrefix="PHP\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/php-libraries/vendor/composer" />
